@@ -1,6 +1,6 @@
 ﻿using Ateo.ArtistCreditsSystem;
 using Newtonsoft.Json;
-using SketchfabCSharp.SketchfabCSharp.Runtime.Ateo.ArtistCreditsSystem;
+using Ateo.ArtistCreditsSystem;
 
 public class SketchfabModel
 {
