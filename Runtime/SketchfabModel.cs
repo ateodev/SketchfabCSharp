@@ -9,9 +9,9 @@ public class SketchfabModel
     public int FaceCount { get; set; }
     public int VertexCount { get; set; }
     public SketchfabThumbnailList Thumbnails { get; set; }
-    
     public string PbrType { get; set; } //save the pbr type to this string. this is mostly a test to extend the model class
 
+    public int LikeCount { get; set; }
     public override string ToString()
     {
         string modelString = $"Uid: {Uid}\n" +
@@ -21,7 +21,8 @@ public class SketchfabModel
             $"Face count: {FaceCount}\n" +
             $"Vertex count: {VertexCount}\n" +
             $"Thumbnails: {Thumbnails}\n" + 
-            $"PbrType: {PbrType}\n";
+            $"PbrType: {PbrType}\n" +
+            $"LikeCount: {LikeCount}\n";
 
         return modelString;
     }
