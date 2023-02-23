@@ -9,6 +9,8 @@ public class SketchfabModel
     public int FaceCount { get; set; }
     public int VertexCount { get; set; }
     public SketchfabThumbnailList Thumbnails { get; set; }
+    
+    public string PbrType { get; set; } //save the pbr type to this string. this is mostly a test to extend the model class
 
     public override string ToString()
     {
@@ -18,7 +20,8 @@ public class SketchfabModel
             $"Description: {Description}\n" +
             $"Face count: {FaceCount}\n" +
             $"Vertex count: {VertexCount}\n" +
-            $"Thumbnails: {Thumbnails}";
+            $"Thumbnails: {Thumbnails}\n" + 
+            $"PbrType: {PbrType}\n";
 
         return modelString;
     }
