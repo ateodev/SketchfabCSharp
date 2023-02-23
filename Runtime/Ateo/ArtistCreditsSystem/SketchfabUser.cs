@@ -1,5 +1,3 @@
-namespace Ateo.ArtistCreditsSystem;
-
 /// <summary>
 /// used to store the info about a single
 /// sketchfab user attributed as artist of a sketchfab model
