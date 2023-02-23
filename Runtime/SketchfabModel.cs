@@ -1,4 +1,6 @@
-﻿using Newtonsoft.Json; 
+﻿using Ateo.ArtistCreditsSystem;
+using Newtonsoft.Json;
+using SketchfabCSharp.SketchfabCSharp.Runtime.Ateo.ArtistCreditsSystem;
 
 public class SketchfabModel
 {
@@ -10,8 +12,9 @@ public class SketchfabModel
     public int VertexCount { get; set; }
     public SketchfabThumbnailList Thumbnails { get; set; }
     public string PbrType { get; set; } //save the pbr type to this string. this is mostly a test to extend the model class
-
     public int LikeCount { get; set; }
+    
+    public SketchfabUser User { get; set; }
     public override string ToString()
     {
         string modelString = $"Uid: {Uid}\n" +
@@ -22,7 +25,8 @@ public class SketchfabModel
             $"Vertex count: {VertexCount}\n" +
             $"Thumbnails: {Thumbnails}\n" + 
             $"PbrType: {PbrType}\n" +
-            $"LikeCount: {LikeCount}\n";
+            $"LikeCount: {LikeCount}\n" +
+            $"User: {User}\n";
 
         return modelString;
     }
